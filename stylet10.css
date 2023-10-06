@@ -1,0 +1,77 @@
+body{
+    background-color:rgb(190, 190, 31);
+    color: rgb(111, 10, 112);
+}
+.sidenav {
+    width: 20%;
+    /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0)); */
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(0, 0, 0)); 
+    height: 5%;
+    position: fixed;
+    top: 70px;
+    left: 10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:0px;
+}
+.sidenav1 {
+    width: 20%;
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(0, 0, 0)); 
+    height: 5%;
+    position: fixed;
+    top: 120px;
+    left: 10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:0px;
+}
+
+.sidenav2 {
+    width: 20%;
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(0, 0, 0)); 
+    height: 5%;
+    position: fixed;
+    top: 170px;
+    left: 10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:0px;
+}
+
+.sidenav3 {
+    width: 20%;
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(0, 0, 0)); 
+    height: 5%;
+    position: fixed;
+    top: 220px;
+    left: 10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:0px;
+}
+/* Style the list items */
+.sidenav ul, .sidenav1 ul, .sidenav2 ul, .sidenav3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav li, .sidenav1 li, .sidenav2 li, .sidenav3 li {
+    padding: 0px 0;
+    text-align: left;
+}
+
+/* Style the links */
+.sidenav a, .sidenav1 a, .sidenav2 a, .sidenav3 a {
+    color: rgb(9, 72, 150);
+    text-decoration: none;
+    display: block;
+    padding: 0px;
+    transition: background-color 0.3s;
+}
+
+/* Change background color on hover */
+.sidenav a:hover, .sidenav1 a:hover, .sidenav2 a:hover, .sidenav3 a:hover {
+    color: #9d0ea4;
+    padding: 0px;
+}
+
+/* Show the side navigation on hover */
+.sidenav:hover, .sidenav1:hover, .sidenav2:hover, .sidenav3:hover {
+    left: 50px;
+}

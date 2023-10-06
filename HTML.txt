@@ -1,0 +1,10 @@
+input 
+Atrributes:
+1. type => text(def),password, email, number, tel , checkbox, radio,
+           range, color, data, time, datetime-locate, month, week, 
+           button, submit, reset, search, url
+2. placeholder => "User defined text"
+3. value            
+
+
+<input type" " /> 

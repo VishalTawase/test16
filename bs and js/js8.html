@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    form {
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px #888888;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .error {
+      color: red;
+      float: right;
+    }
+    button[type="button"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button[type="button"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form id="registrationForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <span class="error" id="firstNameError"></span>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <span class="error" id="lastNameError"></span>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span class="error" id="emailError"></span>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span class="error" id="passwordError"></span>
+    <label for="reenterPassword">Re-enter Password:</label>
+    <input type="password" id="reenterPassword" name="reenterPassword">
+    <span class="error" id="reenterPasswordError"></span>
+    <label>Gender:</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <span class="error" id="genderError"></span>
+    <label for="address">Address:</label>
+    <br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+    <span class="error" id="addressError"></span>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone">
+    <span class="error" id="phoneError"></span>
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state">
+    <span class="error" id="stateError"></span>
+    <label for="country">Country:</label>
+    <br>
+    <select id="country" name="country">
+      <option value="Select Country">Select Country</option>
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="uk">UK</option>
+    </select>
+    <span class="error" id="countryError"></span>
+    <label for="languages">Languages Known:</label>
+    <br>
+    <input type="checkbox" id="english" name="languages" value="english">
+    <label for="english">English</label>
+    <input type="checkbox" id="kannada" name="languages" value="kannada">
+    <label for="kannada">Kannada</label>
+    <input type="checkbox" id="hindi" name="languages" value="hindi">
+    <label for="hindi">Hindi</label>
+    <input type="checkbox" id="telugu" name="languages" value="telugu">
+    <label for="telugu">Telugu</label>
+    <span class="error" id="languagesError"></span>
+    <label for="declaration">
+      <input type="checkbox" id="declaration" name="declaration"> I agree to the terms and conditions
+    </label>
+    <span class="error" id="declarationError"></span>
+    <button type="button" id="registerBtn">Register</button>
+  </form>
+  <script>
+    document.getElementById('registerBtn').addEventListener('click', function () {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const reenterPassword = document.getElementById('reenterPassword').value;
+      const gender = document.querySelector('input[name="gender"]:checked');
+      const address = document.getElementById('address').value;
+      const phone = document.getElementById('phone').value;
+      const state = document.getElementById('state').value;
+      const country = document.getElementById('country').value;
+      const languages = document.querySelectorAll('input[name="languages"]:checked');
+      const declaration = document.getElementById('declaration');
+      let isValid = true;
+      if (firstName.trim() === '') {
+        document.getElementById('firstNameError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (lastName.trim() === '') {
+        document.getElementById('lastNameError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (email.trim() === '') {
+        document.getElementById('emailError').textContent = 'POOR.';
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+      if (password.trim() === '') {
+        document.getElementById('passwordError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (reenterPassword.trim() === '') {
+        document.getElementById('reenterPasswordError').textContent = 'Poor or Mismatch.';
+        isValid = false;
+      } else if (reenterPassword !== password) {
+        document.getElementById('reenterPasswordError').textContent = '';
+        isValid = false;
+      }
+      if (!gender) {
+        document.getElementById('genderError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (address.trim() === '') {
+        document.getElementById('addressError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (phone.trim() === '') {
+        document.getElementById('phoneError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (state.trim() === '') {
+        document.getElementById('stateError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (country === 'Select Country') {
+        document.getElementById('countryError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (languages.length === 0) {
+        document.getElementById('languagesError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (!declaration.checked) {
+        document.getElementById('declarationError').textContent = 'POOR.';
+        isValid = false;
+      }
+      if (isValid) {
+        alert('Registration successful!');
+        document.getElementById('registrationForm').reset(); // Clear form fields
+      }
+    });
+    function isValidEmail(email) {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    }
+  </script>
+</body>
+</html>

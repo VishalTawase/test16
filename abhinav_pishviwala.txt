@@ -1,0 +1,514 @@
+Task1:
+<table border="1" bordercolor="white" bgcolor="aquamarine" height="100" width="60%">
+    <tr>
+        <th>Firstname</td>
+        <th>Lastname</td>
+        <th>Age</td>
+    </tr>
+
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+
+Task2:
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>
+            Lists can be nested(list inside list):
+        </p>
+        <ul> 
+            <li>Cofee</li>
+            <li>Tea
+                <ul type="circle">
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </body>
+</html>
+
+Task3:
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Click any of the following links</p>
+        <a href="https://www.ethnus.com">Open in New</a>  |
+        <a href="https://www.amazon.in">Opens in Self</a>  |
+        <a href="https://www.flipkart.com/">Opens in Parent</a>  |
+        <a href="https://www.spacex.com">Opens in Body</a>  |
+        <a href="https://www.tesla.com">Send email</a>  
+    </body>
+</html>
+
+Task4:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Click to add te:</p>
+        <form>
+            <p>
+            <label Full Name:</label>
+            <input type="text" name="fn" placeholder="Vincent Maverick Durano" required /><br />
+            </p>
+
+            <p>
+            <label for="fn">Username:</label>
+            <input type="text" name="fn" placeholder="Vincent Maverick Durano" required /><br />
+            </p>
+
+            <p>
+            <label for="pw">Password:</label>
+            <input type="password"/><br ?>
+            </p>
+
+            <p>
+            <label for="pw">Re Password:</label>
+            <input type="password"/><br />
+            </p>
+
+            <p>
+            <label for="fn">Address</label>
+            <input type="text" name="fn" placeholder="Vincent Maverick Durano" required /><br />  
+            </p>
+
+            <p>
+            <label for="age"> Age:</label>
+            <input type="number" name="age" value="22"/><br />
+            </p>
+
+            <p>
+            <label </label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select><br />
+            </p>
+
+            <p>
+            <input type="button" value="Save" />
+            </p>
+        </form>
+    </body>
+</html>
+
+
+Task5:
+<p align="center">
+    <table border="1" bordercolor="black" bgcolor="White">
+    <caption>Registration form</caption>
+    <tr>
+        <th>First Name</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Last Name</th>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <th>Email</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Password</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Re-enter-Password</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Gender:</th>
+        <td>            
+            <input type="radio" name="gender" checked/> Male<br />
+            <input type="radio" name="gender" /> Female
+        </td>
+    </tr>
+    <tr>
+        <th>Age:</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Phone Number</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Address</th>
+        <td><br />
+            <br />
+            <br />
+        </td>
+    </tr>
+ 
+
+    <tr>
+        <th>State</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Country</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Languages Known</th>
+        <td>
+            <input type="checkbox" /> English
+            <input type="checkbox" /> Kannada
+            <input type="checkbox" /> Hindi
+            <input type="checkbox" /> Telugu &nbsp&nbsp&nbsp&nbsp;
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" /> Hereby I declare all the details are true.</td>
+    </tr>
+
+    <tr>
+        <td><p align="right">Log in to <a href="https://www.ethnus.com">Ethnus</a> website</p></td>
+    </tr>
+
+</table>
+</p>
+
+<p><input type="button" value="Register" /></p>
+
+
+Task6:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="./stylet6.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <table border="1" bordercolor="black" bgcolor="aquamarine" height="100" width="60%">
+            <tr>
+                <th>Firstname</td>
+                <th>Lastname</td>
+                <th>Age</td>
+            </tr>   
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+                
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+    </body>
+</html>    
+
+Task7:
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./stylet7.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Bootstrap</a></li>
+    </ul>
+  </div>
+</body>
+</html>
+
+Task8:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Contacts</title>
+  <link href="./stylet8.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <!-- Add more table rows as needed -->
+</table>
+
+</body>
+</html>
+
+
+
+Task9:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylet9.css" rel="stylesheet" type="text/css" />
+    <title>Hoverable SideNav Buttons</title>
+</head>
+<body>
+    <nav class="sidenav">
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+
+    <nav class="sidenav1">
+        <ul>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>     
+
+    <nav class="sidenav2">
+        <ul>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>    
+
+    <nav class="sidenav3">
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+    <p >
+    <dl align="center"> 
+        <h1><dt>Hoverable Sidenav Buttons</dt></h1> <!--defination list--> 
+        <dd>Hover over the buttons in the left side navigation to open them</dd><!-- -->
+    </dl> 
+    </p>
+</body>
+</html>
+
+Task10:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylet10.css" rel="stylesheet" type="text/css" />
+</head>
+<body align="left" leftmargin="30%" >
+    <p>
+        <h1>My first styled page</h1>
+    </p>
+    
+    <p>Welcome to my styled page!</p>
+    <p>It lacks images, but at least it has style. And it<br /> has links, even if they don't go anywhere....</p>
+    <p>There should be more here, but I don't know<br /> what yet.</p>
+    <p> Made 5 September 2023<br />by myself.</p>
+
+    <nav class="sidenav">
+        <ul>
+            <li><a href="#">Home page</a></li>
+        </ul>
+    </nav>
+    <nav class="sidenav1">
+        <ul>
+            <li><a href="#">Musings</a></li>
+        </ul>
+    </nav>     
+
+    <nav class="sidenav2">
+        <ul>
+            <li><a href="#">My town</a></li>
+        </ul>
+    </nav>    
+
+    <nav class="sidenav3">
+        <ul>
+            <li><a href="#">Links</a></li>
+        </ul>
+    </nav>
+    <p >
+    
+</body>
+</html>
+
+Task11:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylet11.css" rel="stylesheet" type="text/css" />
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="login-form">
+        <img src="login.jpg">
+        <form>
+            <div class="form-group">
+                <label for="username" >Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="button-group" align="left">
+                <button type="submit" class="login-button">Login</button><br />
+                <p><input type="checkbox"/> Remember me<br /></p>
+                <button type="button" class="cancel-button">Cancel</button>
+                <a href="https://www.ethnus.com">Forget password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+Task12:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stylet12.css" rel="stylesheet" type="text/css" />
+        <title>Document</title>
+    </head>
+    <body align="center">
+        <form >
+            <p></p>
+            <p>
+            <label for="fn">Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" name="fn" placeholder="your name" required /><br />
+            </p>
+
+            <p>
+            <label for="fn">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" name="fn" placeholder="your email" required /><br />
+            </p>
+
+            <p>
+            <label for="pw">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="password"/><br ?>
+            </p>
+
+            <p>
+            <label for="fn">Phone Number:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" name="fn" required/><br />
+            </p>
+
+            <p>
+            <label for="fn">Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <ab>Male:</ab><input type="radio" name="gender" checked/> 
+            <ab>Female:</ab> <input type="radio" name="gender" /> 
+            <ab>Other:</ab><input type="radio" name="gender" /> 
+            </p>
+
+            <p>
+            <label for="age"> Language:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <select>
+                <option>Select Language</option>
+                <option>Choice1</option>
+                <option>Choice2</option>
+                <option>Choice3</option>
+                <option>Choice4</option>
+            </select>
+            </p>
+
+            <p>
+                <label for="fn">Zip Code:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" name="fn" required/><br />
+            </p>
+
+            <p>
+                <label for="fn">About:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <textarea placeholder="Write about yourself...." required></textarea>
+            </p>
+
+            <p>
+            <button type="submit" class="login-button">Register</button><br />
+            </p>
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+/* Reset some default styles for list items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation bar container */
+  .navbar {
+    background-color: #80c4cf;
+    width: 250px; /* Set the width of the navigation bar */
+    height: 100%; /* Make it take the full height of its container */
+    position: fixed; /* Fixed position so it stays in place when scrolling */
+  }
+  
+  /* Style the list items (menu items) */
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Style the links */
+  .navbar a {
+    text-decoration: none;
+    color:blue;
+    display: block; /* Make the entire list item clickable */
+  }
+  
+  /* Change the background color of the list item when hovered */
+  .navbar li:hover {
+    background-color: #e1853f;
+  }
+  

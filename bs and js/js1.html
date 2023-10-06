@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1-Syed Suhail</title>
+</head>
+<body>
+    <h1>Reverse Number</h1>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button id="reverseButton">Reverse</button>
+    <p id="result"></p>
+
+    <script>
+        function reverseNumber(x) {
+            const numString = x.toString();
+            const reversedString = numString.split('').reverse().join('');
+            const reversedNumber = parseInt(reversedString, 10);
+            return reversedNumber;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const numberInput = document.getElementById('numberInput');
+            const reverseButton = document.getElementById('reverseButton');
+            const result = document.getElementById('result');
+
+            reverseButton.addEventListener('click', function () {
+                const x = parseInt(numberInput.value, 10);
+                const reversed = reverseNumber(x);
+                result.textContent = `Input: ${x}, Reversed: ${reversed}`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+        <h4>Hello</h4>
+        <h5>Hello</h5>
+        <h6>Hello</h6>
+        <p>Hello</p>
+
+        <!-- Bold tag -->
+        <p>This is <b>Bold</b></p> 
+        <!-- Italic tag -->
+        <p>This is <i>italic</i></p>
+        <!-- Underline -->
+        <p>This is <u>underline</u></p>
+        <!-- Superscript => text above the baseline of the text -->
+        <!-- Subscript => text below the baseline of the text -->
+        <p>H<sub>2</sub>O</p>
+        
+        <!-- Abbreviation => HTML - HyperText Markup Language -->
+        <abbr title="cat">HTML</abbr>
+        <!-- Self closing/empty tag or void elements -->
+        <br />
+        <acronym title="HTML">HyperText Markup Language</acronym> <br />
+        <code>println("Hello")</code> <br />
+        <del>Hello</del>
+        <br />
+        <cite>Book1</cite>
+        <cite>Book2</cite>
+        <cite>Book3</cite>
+        <!-- Blocking element -->
+        <address>Movie1</address>
+        <address>Movie2</address>
+        <address>Movie3</address>
+
+        <!-- HTML List -->
+        <!-- Numbered list -->
+        <ol type="i" start="3"> <!-- type="1(def) | A | a | I | i" -->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ol>
+        <!-- Bulleted list -->
+        <ul type="circle"> <!-- type = "disc(def) | circle | square | none"-->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ul>
+
+        <!-- Dictionary format. It provides the text-indent -->
+        <dl> <!-- definition list-->
+            <dt>HTML</dt> <!-- definition term -->
+            <dd>HTML stands for HyperText Markup Language</dd> <!-- data definition -->
+        </dl>
+    <!-- Anchor tag -> Navigate to webpages -->
+    <!-- 1. Text URL -->
+    <a href="https://www.ethnus.com">Ethnus</a>
+    <a href="https://www.amazon.in">Amazon</a>
+    <a href="https://www.flipkart.com">Flipkart</a>
+    <a
+        href="https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">Mobile</a>
+<!-- Image URL -->
+    <a href="https://www.meesho.com">
+        <img src="./nature.webp" alt="Flower.jpg" height="100" width="100"/>
+    </a>
+
+    <!-- Mail URL -->
+    <a href="mailto:shankar@gmail.com">Send email to us</a>
+
+    <!-- Bookmark URL -->
+    <a href="#">Top of the page</a>
+    </body>
+</html>

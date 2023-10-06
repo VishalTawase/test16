@@ -1,0 +1,45 @@
+/* 4-9-23 */
+p{
+    cursor: pointer;
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: green; */
+    border:4px solid green;
+    border-radius:40px;
+
+    /* padding-top:10px;
+    padding-bottom:20px;
+    padding-left:30px;
+    padding-right:40px;
+    padding:10px[t] 20px[r] 30px[b]  
+    */
+    position: sticky;
+    top:0px;
+    padding: 10px 40px 20px;
+    z-index: 5;
+}
+
+#b2{
+    background-color: green;
+    z-index: 3;
+}
+#b1{
+    background-color: red;
+    z-index: 0;
+}
+#b3{
+    background-color: blue;
+    z-index: 2;
+}
+div{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+#b4{
+    background-color: orange;
+    width: 100%;
+    position: sticky;
+    top:0px;
+    z-index: 6;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS5-Syed Suhail</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <span class="error" id="nameError"></span><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <span class="error" id="emailError"></span><br>
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website"><br>
+    <span class="error" id="websiteError"></span><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <span class="error" id="messageError"></span><br>
+    <button type="button" id="submitBtn">Submit</button>
+  </form>
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function () {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const website = document.getElementById('website').value;
+      const message = document.getElementById('message').value;
+      document.getElementById('nameError').textContent = '';
+      document.getElementById('emailError').textContent = '';
+      document.getElementById('websiteError').textContent = '';
+      document.getElementById('messageError').textContent = '';
+      let isValid = true;
+      if (name.trim() === '') {
+        document.getElementById('nameError').textContent = 'This field is required for Name.';
+        isValid = false;
+      }
+      if (message.trim() === '') {
+        document.getElementById('messageError').textContent = 'This field is required for Message.';
+        isValid = false;
+      }
+      if (email.trim() === '') {
+        document.getElementById('emailError').textContent = 'This field is required for Email.';
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+      if (website.trim() === '') {
+        document.getElementById('websiteError').textContent = 'This field is required for Website.';
+        isValid = false;
+      } else if (!isValidURL(website)) {
+        document.getElementById('websiteError').textContent = 'Please enter a valid website URL.';
+        isValid = false;
+      }
+      if (isValid) {
+        alert('Form submitted successfully!');
+        document.getElementById('contactForm').reset();
+      }
+    });
+    function isValidEmail(email) {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    }
+    function isValidURL(url) {
+      const urlPattern = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+      return urlPattern.test(url);
+    }
+  </script>
+</body>
+</html>

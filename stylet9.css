@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+dl{
+    
+}
+
+/* Style the side navigation */
+.sidenav {
+    width: 10%;
+    background-color: #15ad7f;
+    height: 10%;
+    position: fixed;
+    top: 100px;
+    left: -10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:4px;
+}
+
+.sidenav1 {
+    width: 10%;
+    background-color: #07a4ed;
+    height: 10%;
+    position: fixed;
+    top: 200px;
+    left: -10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:4px;
+}
+
+.sidenav2 {
+    width: 10%;
+    background-color: #ce0c0c;
+    height: 10%;
+    position: fixed;
+    top: 300px;
+    left: -10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:4px;
+}
+
+.sidenav3 {
+    width: 10%;
+    background-color: #3c2e2e;
+    height: 10%;
+    position: fixed;
+    top: 400px;
+    left: -10px; /* Initially hidden off-screen */
+    transition: left 0.3s ease-in-out;
+    border-radius:4px;
+}
+/* Style the list items */
+.sidenav ul, .sidenav1 ul, .sidenav2 ul, .sidenav3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav li, .sidenav1 li, .sidenav2 li, .sidenav3 li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style the links */
+.sidenav a, .sidenav1 a, .sidenav2 a, .sidenav3 a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Change background color on hover */
+.sidenav a:hover, .sidenav1 a:hover, .sidenav2 a:hover, .sidenav3 a:hover {
+    background-color: #a20e0e;
+}
+
+/* Show the side navigation on hover */
+.sidenav:hover, .sidenav1:hover, .sidenav2:hover, .sidenav3:hover {
+    left: 50px;
+}

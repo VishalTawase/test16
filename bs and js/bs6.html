@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BS6-Syed Suhail</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+select {
+  width: 100%; /* Make the select element full width */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #e4100d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.logo {
+  width: 20%;
+  border-radius: 50%;
+}
+.container {
+  padding: 10px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.notification {
+  color: red;
+  font-weight: bold;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<form action="/action_page.php" method="post" onsubmit="return validateForm()">
+  <div class="container">
+    <label for="uname"><b>Name</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Email</b></label>
+    <input type="password" placeholder="Enter Mail" name="psw" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <label class="city"><b>Hobbies</b></label>
+    <select name="city" id="city" class="container">
+      <option value="0">Select</option>
+      <option value="1">run</option>
+      <option value="2">read</option>
+      <option value="3">code</option>
+      <option value="4">exercise</option>
+    </select>
+    <button type="submit">Submit</button>
+    <p class="notification" id="nameNotification"></p>
+    <p class="notification" id="emailNotification"></p>
+    <p class="notification" id="passwordNotification"></p>
+    <p class="notification" id="cityNotification"></p>
+  </div>
+</form>
+<script>
+function validateForm() {
+  var name = document.forms[0]["uname"].value;
+  var email = document.forms[0]["psw"].value;
+  var password = document.forms[0]["password"].value;
+  var city = document.forms[0]["city"].value;
+  var isValid = true;
+  if (name === "") {
+    document.getElementById("nameNotification").innerHTML = "Name is required.";
+    isValid = false;
+  } else {
+    document.getElementById("nameNotification").innerHTML = "";
+  }
+  if (email === "") {
+    document.getElementById("emailNotification").innerHTML = "Email is required.";
+    isValid = false;
+  } else {
+    document.getElementById("emailNotification").innerHTML = "";
+  }
+  if (password === "") {
+    document.getElementById("passwordNotification").innerHTML = "Password is required.";
+    isValid = false;
+  } else {
+    document.getElementById("passwordNotification").innerHTML = "";
+  }
+  if (city === "0") {
+    document.getElementById("cityNotification").innerHTML = "Please select a city.";
+    isValid = false;
+  } else {
+    document.getElementById("cityNotification").innerHTML = "";
+  }
+  return isValid;
+}
+</script>
+</body>
+</html>

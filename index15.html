@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Unary operators");
+        console.log("Increment operators");
+        let a = 10;
+        let b = 20;
+        console.log(a++); //10, then in memory a=10+1 = 11
+        console.log(a); //11
+        console.log(--b); //19 //In memory, b = 20-1 = 19 //19
+        console.log(b); //19
+
+
+        console.log("Binary operators");
+        console.log("Arithmetic operators");
+        a = 10;
+        b = 3;
+        console.log(a+b); //13
+        console.log(a-b); //7
+        console.log(a*b); //30
+        console.log(a/b); //3.3333
+        console.log(a%b); //1
+        b = 0;
+        console.log(a/b); //Infinity
+        b = undefined;
+        console.log(a+b); //NaN
+
+
+        console.log("Assignment operators");
+        a = 10;
+        b = 20;
+        console.log(a+=b); //a = a+b //10+20 //a=30 //30
+        console.log(a-=b); //a = a-b //30-20 //a=10 //10
+        console.log(a*=b); //a = a*b //10*20 //a=200 //200
+        console.log(a%=b); //a = a%b //200%20 //a=0 //0
+        console.log(a/=b); //a = a/b //0/20 //a=0 //0
+
+
+        console.log("Relational operators");
+        a = 10;
+        b = 20;
+        console.log(a<b);  //true
+        console.log(a>b);  //false
+        console.log(a<=b); //true
+        console.log(a>=b); //false
+        console.log(a==b); //false
+        console.log(a!=b); //true
+
+
+        // == is used check only the value
+        // === is used to check both type and value
+
+
+        b = "10";
+        console.log(a==b); //true
+        console.log(a===b); //false
+    </script>
+</body>
+</html>
+
+

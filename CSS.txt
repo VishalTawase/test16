@@ -1,0 +1,19 @@
+Introduction to CSS
+ -> Cascading stylesheets
+ -> Make the html page more atrractive
+
+Advantages
+-> Global web standards
+-> Multiple device compatiabilty
+-> Less time for styling 
+-> One stylesheet multiple html pages
+
+Ways to style
+1. Inline styling -> It will have the style atrributes in the opening tag
+2. Internal styling -> It will have style tag inside the head tag of html file
+3. External styling -> separate css file will be created and 
+
+
+Preference
+1. id
+2. 

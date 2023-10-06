@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document object</h1>
+
+    <p name="n1" class="c1" id="i1">Welcome - i1</p>
+    <p name="n1" id="i2">Welcome - i2</p>
+    <p class="c1">Welcome</p>
+    <p name="n1">Welcome</p>
+    <p class="c1">Welcome</p>
+    <p>Welcome</p>
+    <p name="n1">Welcome</p>
+    <p name="n1" class="c1">Welcome - c1</p>
+    <p class="c1">Welcome</p>
+    <p>Welcome</p>
+    <p>Welcome</p>
+    <p class="c1">Welcome</p>
+    <p name="n1">Welcome</p>
+    <p class="c1">Welcome</p>
+
+    <button onclick="f1()">Modify 1</button>
+    <button onclick="f2()">Modify 2</button>
+    <button onclick="f3()">Count the class</button> <!-- 7 -->
+    <button onclick="f4()">Count the name</button> <!-- 6 -->
+    <button onclick="f5()">Count the tags</button> <!-- 14 -->
+    <button onclick="f6()">Modify content</button>
+    <script>
+        document.write("Hi");
+        document.write("Hello <br />");
+        document.writeln("Hi");
+        document.writeln("Hello <br />");
+        var toggle = true;
+        function f1()
+        {
+            document.getElementById("i1").innerHTML = "<h1>Greetings</h1>";
+        }
+        function f2()
+        {
+            document.getElementById("i2").innerText = "<h1>Greetings</h1>";
+        }
+
+        function f3()
+        {
+            let total = document.getElementsByClassName("c1").length;
+            alert("No of tags having class name as c1: "+ total);
+        }
+
+        function f4()
+        {
+            console.log(document.getElementsByName("n1")); //HTMLCollection []
+            let total = document.getElementsByName("n1").length;
+            alert("No of tags having name as n1: "+ total);
+        }
+
+        function f5()
+        {
+            let total = document.getElementsByTagName("p").length;
+            alert("No of tags having tag name as p: "+ total);
+        }
+
+        function f6()
+        {
+            if(toggle)
+            {
+            document.getElementsByClassName("c1")[3].innerHTML = "<h2>Good morning</h2>";
+            toggle= (!toggle);
+            }
+            else{
+            document.getElementsByClassName("c1")[3].innerHTML = "Welcome - c1";
+            toggle= (!toggle);
+            }
+		  // (toggle)?
+            // document.getElementsByClassName("c1")[3].innerHTML = "<h2>Good morning</h2>"
+            // :document.getElementsByClassName("c1")[3].innerHTML = "Welcome - c1";
+            // toggle= (!toggle);
+        }
+
+
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="i1" placeholder="Enter first number" />
+    <input type="text" id="i2" placeholder="Enter second number" />
+    <button onclick="multiply()">Multiply</button>
+    <p id="i3">Result: </p>
+    
+    <!-- <script>
+        // alert("Hi");
+        // document.write("Welcome");
+        // console.log("Hello");
+        // document.getElementById("demo").innerHTML = "Good morning";
+
+        //variable
+        // var a = 10;
+        // var b = 20;
+        // var c = a+b; //Undergoes addition
+        // console.log(c); //30
+        // var d = 10; //number
+        // var e = "20"; //string
+        // var f = d+e; //Undergoes concatation
+        // console.log(f); //10+"20" => "1020"
+        // var g = null;
+        // var h;
+        // console.log(g); // null
+        // console.log(h); // undefined
+        // document.write(g);
+        // document.write(h); //nullundefined
+
+        // document.writeln(g);
+        // document.writeln(h); //null undefined
+
+        // document.write(g+ "<br />"); //null
+        // document.write(h+ "<br />"); //undefined
+
+        //function
+        // function abc()
+        // {
+        //     console.log("M1");
+        //     // return undefined;
+        // }
+
+        // abc(); //M1
+        // console.log(abc()); //M1 undefined
+
+        // function def()
+        // {
+        //     console.log("M2");
+        //     return 30;
+        // }
+
+        // def(); //M2
+        // console.log(def()); //M2 30
+
+        // function lmn(a, b)
+        // {
+        //     console.log("M3 have "+a+" "+b);
+        //     return a+b;
+        // }
+
+        // console.log(lmn(400,600)); //M3 have 400 600, 1000  
+        // console.log(lmn(5)); //M3 have undefined undefined, NaN
+        //undefined+undefined => NaN (i.e)Not a Number
+
+    </script> -->
+    
+    <script>
+        function multiply()
+        {
+            var i1 = document.getElementById("i1").value; //"2"
+            var a = Number.parseInt(i1); //2
+            var i2 = document.getElementById("i2").value; //"4"
+            var b = Number.parseInt(i2); //4
+            var prod = a*b;
+            document.getElementById("i3").innerHTML = "Result: "+prod;
+        }
+    </script>
+</body>
+</html>
